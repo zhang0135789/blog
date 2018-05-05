@@ -1,0 +1,5 @@
+*.js linguist-language=javaWeb
+*.css linguist-language=javaWeb
+*.html linguist-language=javaWeb
+*.java linguist-language=javaWeb
+*.jsp linguist-language=javaWeb
