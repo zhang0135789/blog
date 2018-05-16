@@ -76,7 +76,7 @@ public class IndexController {
 		}
 		mav.addObject("pageCode",PageUtil.genPagination(request.getContextPath()+"/index.html", blogService.getTotal(map), Integer.parseInt(page), 10, param.toString()));
 		mav.addObject("mainPage", "foreground/blog/list.jsp");
-		mav.addObject("pageTitle","Java开源博客系统");
+		mav.addObject("pageTitle","博客系统");
 		mav.setViewName("mainTemp");
 		return mav;
 	}
@@ -90,7 +90,7 @@ public class IndexController {
 	public ModelAndView download()throws Exception{
 		ModelAndView mav=new ModelAndView();
 		mav.addObject("mainPage", "foreground/system/download.jsp");
-		mav.addObject("pageTitle","本站源码下载页面_Java开源博客系统");
+		mav.addObject("pageTitle","本站源码下载页面_博客系统");
 		mav.setViewName("mainTemp");
 		return mav;
 	}
