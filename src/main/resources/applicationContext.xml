@@ -18,7 +18,7 @@
 	<!-- 配置数据源 -->
 	<bean id="dataSource"
 		class="com.alibaba.druid.pool.DruidDataSource">
-		<property name="url" value="jdbc:mysql://localhost:3306/db_blog3?useUnicode=true&amp;characterEncoding=UTF-8"/>
+		<property name="url" value="jdbc:mysql://localhost:3306/db_blog?useUnicode=true&amp;characterEncoding=UTF-8"/>
 		<property name="username" value="root"/>
 		<property name="password" value="root"/>
 	</bean>
