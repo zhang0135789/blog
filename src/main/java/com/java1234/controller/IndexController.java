@@ -80,7 +80,14 @@ public class IndexController {
 		mav.setViewName("mainTemp");
 		return mav;
 	}
-	
+
+	@RequestMapping("/main")
+	public void mainIndex() {
+
+	}
+
+
+
 	/**
 	 * т╢бКобть
 	 * @return
