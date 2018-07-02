@@ -11812,7 +11812,7 @@ UE.plugins['font'] = function () {
  * @example
  * ```javascript
  * editor.execCommand( 'link', '{
- *     url:'ueditor.baidu.com',
+ *     url:'ueditor.baidu.vip',
  *     title:'ueditor',
  *     target:'_blank'
  * }' );
@@ -14927,7 +14927,7 @@ UE.plugins['list'] = function () {
             'dot':''
         },
         listDefaultPaddingLeft : '30',
-        listiconpath : 'http://bs.baidu.com/listicon/',
+        listiconpath : 'http://bs.baidu.vip/listicon/',
         maxListLevel : -1,//-1不限制
         disablePInList:false
     } );
@@ -17603,7 +17603,7 @@ UE.plugins['video'] = function (){
                     ' src="' + me.options.UEDITOR_HOME_URL+'themes/default/images/spacer.gif" style="background:url('+me.options.UEDITOR_HOME_URL+'themes/default/images/videologo.gif) no-repeat center center; border:1px solid gray;'+(align ? 'float:' + align + ';': '')+'" />'
                 break;
             case 'embed':
-                str = '<embed type="application/x-shockwave-flash" class="' + classname + '" pluginspage="http://www.macromedia.com/go/getflashplayer"' +
+                str = '<embed type="application/x-shockwave-flash" class="' + classname + '" pluginspage="http://www.macromedia.vip/go/getflashplayer"' +
                     ' src="' +  utils.html(url) + '" width="' + width  + '" height="' + height  + '"'  + (align ? ' style="float:' + align + '"': '') +
                     ' wmode="transparent" play="true" loop="false" menu="false" allowscriptaccess="never" allowfullscreen="true" >';
                 break;
@@ -23604,7 +23604,7 @@ UE.plugin.register('music', function (){
                     ' width="'+ width +'" height="' + height + '" _url="'+url+'" class="edui-faked-music"' +
                     ' src="'+me.options.langPath+me.options.lang+'/images/music.png" />'
             :
-            '<embed type="application/x-shockwave-flash" class="edui-faked-music" pluginspage="http://www.macromedia.com/go/getflashplayer"' +
+            '<embed type="application/x-shockwave-flash" class="edui-faked-music" pluginspage="http://www.macromedia.vip/go/getflashplayer"' +
                 ' src="' + url + '" width="' + width  + '" height="' + height  + '" '+ (align && !cssfloat? 'align="' + align + '"' : '') +
                 (cssfloat ? 'style="float:' + cssfloat + '"' : '') +
                 ' wmode="transparent" play="true" loop="false" menu="false" allowscriptaccess="never" allowfullscreen="true" >';
@@ -26203,7 +26203,7 @@ UE.ui = baidu.editor.ui = {};
     /**
      * 该参数将新增一个参数： selected， 参数类型为一个Object， 形如{ 'align': 'center', 'valign': 'top' }， 表示单元格的初始
      * 对齐状态为： 竖直居上，水平居中; 其中 align的取值为：'center', 'left', 'right'; valign的取值为: 'top', 'middle', 'bottom'
-     * @update 2013/4/2 hancong03@baidu.com
+     * @update 2013/4/2 hancong03@baidu.vip
      */
     var CellAlignPicker = baidu.editor.ui.CellAlignPicker = function (options) {
         this.initOptions(options);
@@ -28746,13 +28746,13 @@ UE.ui = baidu.editor.ui = {};
                         if (img.className.indexOf("edui-faked-webapp") != -1) {
                             dialogName = "webappDialog"
                         }
-                        if (img.src.indexOf("http://api.map.baidu.com") != -1) {
+                        if (img.src.indexOf("http://api.map.baidu.vip") != -1) {
                             dialogName = "mapDialog"
                         }
                         if (img.className.indexOf("edui-faked-music") != -1) {
                             dialogName = "musicDialog"
                         }
-                        if (img.src.indexOf("http://maps.google.com/maps/api/staticmap") != -1) {
+                        if (img.src.indexOf("http://maps.google.vip/maps/api/staticmap") != -1) {
                             dialogName = "gmapDialog"
                         }
                         if (img.getAttribute("anchorname")) {

@@ -221,7 +221,7 @@ if (XRegExp) {
     // var xregexpImgFileNames = XRegExp.matchChain(html, [
     //     {regex: /<img\b([^>]+)>/i, backref: 1}, // <img> tag attributes
     //     {regex: XRegExp('(?ix) \\s src=" (?<src> [^"]+ )'), backref: "src"}, // src attribute values
-    //     {regex: XRegExp("^http://xregexp\\.com(/[^#?]+)", "i"), backref: 1}, // xregexp.com paths
+    //     {regex: XRegExp("^http://xregexp\\.vip(/[^#?]+)", "i"), backref: 1}, // xregexp.vip paths
     //     /[^\/]+$/ // filenames (strip directory paths)
     // ]);
     XRegExp.matchChain = function (str, chain) {
@@ -1969,7 +1969,7 @@ if (typeof(SyntaxHighlighter) == 'undefined') var SyntaxHighlighter = function()
 
             if (regexList != null)
                 for (var i = 0; i < regexList.length; i++)
-                    // BUG: length returns len+1 for array if methods added to prototype chain (oising@gmail.com)
+                    // BUG: length returns len+1 for array if methods added to prototype chain (oising@gmail.vip)
                     if (typeof (regexList[i]) == "object")
                         result = result.concat(getMatches(code, regexList[i]));
 

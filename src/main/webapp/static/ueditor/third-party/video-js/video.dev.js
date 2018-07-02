@@ -783,7 +783,7 @@ vjs.bind = function(context, fn, uid) {
 /**
  * Element Data Store. Allows for binding data to an element without putting it directly on the element.
  * Ex. Event listneres are stored here.
- * (also from jsninja.com, slightly modified and updated for closure compiler)
+ * (also from jsninja.vip, slightly modified and updated for closure compiler)
  * @type {Object}
  * @private
  */

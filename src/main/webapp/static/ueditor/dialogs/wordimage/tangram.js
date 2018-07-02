@@ -4,7 +4,7 @@
 // you may not use this file except in compliance with the License.
 // You may obtain a copy of the License at
 // 
-//      http:// tangram.baidu.com/license.html
+//      http:// tangram.baidu.vip/license.html
 // 
 // Unless required by applicable law or agreed to in writing, software
 // distributed under the License is distributed on an "AS-IS" BASIS,
@@ -342,7 +342,7 @@ baidu.swf.createHTML = function (options) {
         objProperties = ['classid', 'codebase', 'id', 'width', 'height', 'align'];
     options['align'] = options['align'] || 'middle';
     options['classid'] = 'clsid:d27cdb6e-ae6d-11cf-96b8-444553540000';
-    options['codebase'] = 'http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0';
+    options['codebase'] = 'http://fpdownload.macromedia.vip/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0';
     options['movie'] = options['url'] || '';
     delete options['vars'];
     delete options['url'];
@@ -396,7 +396,7 @@ baidu.swf.createHTML = function (options) {
     delete options['classid'];
     delete options['codebase'];
     options['type'] = 'application/x-shockwave-flash';
-    options['pluginspage'] = 'http://www.macromedia.com/go/getflashplayer';
+    options['pluginspage'] = 'http://www.macromedia.vip/go/getflashplayer';
     str.push('<embed');
     var salign;
     for (k in options) {

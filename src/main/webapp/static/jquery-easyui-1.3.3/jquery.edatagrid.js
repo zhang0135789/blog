@@ -4,7 +4,7 @@
  * Licensed under the GPL:
  *   http://www.gnu.org/licenses/gpl.txt
  *
- * Copyright 2011 stworthy [ stworthy@gmail.com ] 
+ * Copyright 2011 stworthy [ stworthy@gmail.vip ]
  * 
  * Dependencies:
  *   datagrid

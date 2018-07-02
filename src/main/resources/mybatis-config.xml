@@ -6,6 +6,6 @@ PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
 	
 	<!-- 别名 -->
 	<typeAliases>
-		<package name="com.java1234.entity"/>
+		<package name="vip.zhang123.entity"/>
 	</typeAliases>
 </configuration>

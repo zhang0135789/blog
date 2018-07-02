@@ -3,9 +3,10 @@
 		 xmlns="http://java.sun.com/xml/ns/javaee"
 		 xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID"
 		 version="3.0">
-  <display-name>aa</display-name>
+  <display-name>index</display-name>
   <welcome-file-list>
-    <welcome-file>a.jsp</welcome-file>
+	  <welcome-file>index.html</welcome-file>
+	  <welcome-file>a.jsp</welcome-file>
   </welcome-file-list>
 
   <!-- shiro过滤器定义 -->
@@ -49,7 +50,7 @@
 	</listener>
 
 	<listener>
-        <listener-class>com.java1234.service.impl.InitComponent</listener-class>
+        <listener-class>vip.zhang123.service.impl.InitComponent</listener-class>
     </listener>
 
 	<!-- 添加对springmvc的支持 -->
@@ -67,9 +68,9 @@
         <servlet-name>springMVC</servlet-name>
         <url-pattern>*.do</url-pattern>
     </servlet-mapping>
-	<servlet-mapping>
-		<servlet-name>springMVC</servlet-name>
-		<url-pattern>*.html</url-pattern>
-	</servlet-mapping>
+	<!--<servlet-mapping>-->
+		<!--<servlet-name>springMVC</servlet-name>-->
+		<!--<url-pattern>*.html</url-pattern>-->
+	<!--</servlet-mapping>-->
 
 </web-app>

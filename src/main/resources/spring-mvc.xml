@@ -37,5 +37,9 @@
 	</bean>
 
 	<!-- 使用注解的包，包括子集 -->
-	<context:component-scan base-package="com.java1234.controller" />
+	<context:component-scan base-package="vip.zhang123.controller" />
+
+	<!-- 静态资源访问处理 -->
+	<mvc:default-servlet-handler/>
+
 </beans>  

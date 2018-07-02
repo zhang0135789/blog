@@ -8,8 +8,8 @@ function Music() {
     Music.prototype = {
         total:70,
         pageSize:10,
-        dataUrl:"http://tingapi.ting.baidu.com/v1/restserver/ting?method=baidu.ting.search.common",
-        playerUrl:"http://box.baidu.com/widget/flash/bdspacesong.swf",
+        dataUrl:"http://tingapi.ting.baidu.vip/v1/restserver/ting?method=baidu.ting.search.common",
+        playerUrl:"http://box.baidu.vip/widget/flash/bdspacesong.swf",
 
         init:function () {
             var me = this;
@@ -103,7 +103,7 @@ function Music() {
             return null;
         },
         _buildMusicHtml:function (playerUrl) {
-            var html = '<embed class="BDE_try_Music" allowfullscreen="false" pluginspage="http://www.macromedia.com/go/getflashplayer"';
+            var html = '<embed class="BDE_try_Music" allowfullscreen="false" pluginspage="http://www.macromedia.vip/go/getflashplayer"';
             html += ' src="' + playerUrl + '"';
             html += ' width="1" height="1" style="position:absolute;left:-2000px;"';
             html += ' type="application/x-shockwave-flash" wmode="transparent" play="true" loop="false"';
