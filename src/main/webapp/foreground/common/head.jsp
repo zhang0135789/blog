@@ -53,7 +53,8 @@
 						<ul class="dropdown-menu">
 							<li><a href="#">个人主页</a></li>
 							<li><a href="#">1020论坛</a></li>
-							<li><a href="#">more</a></li>
+							<li><a href="#">MORE</a></li>
+							<li><a href="<%=path%>/login.jsp">LOGIN</a></li>
 						</ul>
 					</li>
 				</ul>
