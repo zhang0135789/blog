@@ -7,7 +7,6 @@
 	<meta name="description" content="">
 	<meta name="author"      content="zz">
 
-	<title>博客主页-Powered by zz</title>
 
 	<link rel="shortcut icon" href="<%=path%>/static/assets/images/gt_favicon.png">
 

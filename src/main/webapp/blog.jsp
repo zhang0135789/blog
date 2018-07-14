@@ -3,10 +3,13 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<head>
+	<title>博 客-Powered by zz</title>
+</head>
 
 <jsp:include page="./foreground/common/head.jsp" />
-<body>
 
+<body>
 
 <main id="main">
 

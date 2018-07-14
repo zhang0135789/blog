@@ -3,7 +3,10 @@
 
 <!DOCTYPE html>
 <html lang="en">
+<head>
 
+	<title>博客主页-Powered by zz</title>
+</head>
 <%--</head>--%>
 <jsp:include page="./foreground/common/head.jsp" />
 <body >
