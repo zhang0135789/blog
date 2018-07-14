@@ -40,7 +40,7 @@ public class IndexController {
 	 * @return
 	 * @throws Exception
 	 */
-	@RequestMapping("/index")
+	@RequestMapping("/index.do")
 	public ModelAndView index(@RequestParam(value="page",required=false)String page,@RequestParam(value="typeId",required=false)String typeId,@RequestParam(value="releaseDateStr",required=false)String releaseDateStr,HttpServletRequest request)throws Exception{
 		ModelAndView mav=new ModelAndView();
 		if(StringUtil.isEmpty(page)){
@@ -81,10 +81,6 @@ public class IndexController {
 		return mav;
 	}
 
-	@RequestMapping("/main")
-	public void mainIndex() {
-
-	}
 
 
 
