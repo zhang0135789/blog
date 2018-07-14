@@ -7,7 +7,7 @@
 
 			<div class="container">
 				<div class="widget-body">
-					<p class="text-center">© 2018 All rights reserved. All Rights Reserved<br>
+					<p class="text-center">Copyright© 2018 甲乙丙 版权所有<br>
 						Made with <i class="fa fa-heart pulse"></i> by <a href="#">zz</a>
 					</p>
 				</div>
