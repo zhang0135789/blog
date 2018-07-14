@@ -40,7 +40,7 @@ public class IndexController {
 	 * @return
 	 * @throws Exception
 	 */
-	@RequestMapping("/index.do")
+	@RequestMapping("/blog")
 	public ModelAndView index(@RequestParam(value="page",required=false)String page,@RequestParam(value="typeId",required=false)String typeId,@RequestParam(value="releaseDateStr",required=false)String releaseDateStr,HttpServletRequest request)throws Exception{
 		ModelAndView mav=new ModelAndView();
 		if(StringUtil.isEmpty(page)){
@@ -77,7 +77,7 @@ public class IndexController {
 		mav.addObject("pageCode",PageUtil.genPagination(request.getContextPath()+"/index.html", blogService.getTotal(map), Integer.parseInt(page), 10, param.toString()));
 		mav.addObject("mainPage", "foreground/blog/list.jsp");
 		mav.addObject("pageTitle","²©¿ÍÏµÍ³");
-		mav.setViewName("mainTemp");
+		mav.setViewName("blog");
 		return mav;
 	}
 

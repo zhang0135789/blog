@@ -46,8 +46,8 @@
 
 				<ul class="nav navbar-nav">
 					<li class="active"><a href="<%=path%>/index.html">主页</a></li>
-					<li><a href="<%=path%>/about.jsp">关于博主</a></li>
-					<li><a href="<%=path%>/blog.jsp">博客</a></li>
+					<li><a href="<%=path%>/about.html">关于博主</a></li>
+					<li><a href="<%=path%>/blog.html">博客</a></li>
 					<li class="dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown">More Pages<b class="caret"></b></a>
 						<ul class="dropdown-menu">

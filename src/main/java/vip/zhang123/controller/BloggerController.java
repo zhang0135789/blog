@@ -20,7 +20,6 @@ import vip.zhang123.util.CryptographyUtil;
  *
  */
 @Controller
-@RequestMapping("/blogger")
 public class BloggerController {
 
 	@Resource
@@ -32,7 +31,7 @@ public class BloggerController {
 	 * @param request
 	 * @return
 	 */
-	@RequestMapping("/login")
+	@RequestMapping("/blogger/login")
 	public String login(Blogger blogger, HttpServletRequest request){
 		Subject subject=SecurityUtils.getSubject();
 		UsernamePasswordToken token=new UsernamePasswordToken(blogger.getUserName(), CryptographyUtil.md5(blogger.getPassword(), "zhang123"));
@@ -52,7 +51,7 @@ public class BloggerController {
 	 * @return
 	 * @throws Exception
 	 */
-	@RequestMapping("/about.do")
+	@RequestMapping("/about")
 	public ModelAndView aboutMe(){
 		ModelAndView mav=new ModelAndView();
 		mav.addObject("blogger",bloggerService.find());
