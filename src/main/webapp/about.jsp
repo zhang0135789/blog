@@ -19,10 +19,10 @@
 
 				<article class="post">
 					<header class="entry-header">
+						<h1 class="entry-title"><a href="single.html" rel="bookmark">${blogger.nickName} の BLOG</a></h1>
 						<div class="entry-meta">
 							<span class="posted-on">${blogger.sign}</span>
 						</div>
-						<h1 class="entry-title"><a href="single.html" rel="bookmark">${blogger.nickName}</a></h1>
 					</header>
 					<div class="entry-content" align="center">
 						${blogger.proFile}
@@ -30,6 +30,7 @@
 				</article>
 			</div>
 		</div>
+	</div>
 
 </main>
 
