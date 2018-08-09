@@ -20,11 +20,14 @@
 
 		<div class="row topspace">
 
+
 			<!-- Article main content -->
 			<article class="col-sm-8 maincontent">
+
 				<div class="container">
 					<div class="row topspace">
 						<div class="col-sm-8 col-sm-offset-2">
+
 
 							<article class="post">
 								<header class="entry-header">
@@ -37,6 +40,12 @@
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, molestias, architecto, adipisci, numquam dolor iusto eos reprehenderit placeat quam debitis quas magni eveniet. Saepe, nam, iste consectetur quae necessitatibus dolores provident veritatis possimus rerum facilis quia dicta itaque sapiente iusto natus quidem magni quibusdam. Explicabo nesciunt vel rem obcaecati reprehenderit eveniet culpa repudiandae. Distinctio, quia, provident illum necessitatibus repellendus rem voluptates exercitationem numquam inventore itaque atque sint nihil eveniet consequuntur eius! Laborum, at sit animi quae quidem ex tempora facilis.</p>
 								</div>
 							</article>
+
+							<%--<div class="col-md-9">--%>
+								<jsp:include page="${mainPage}"/>
+							<%--</div>--%>
+
+
 						</div>
 					</div>
 				</div>
@@ -118,18 +127,18 @@
 
 			</aside>
 			<!-- /Sidebar -->
-			<center class="">
-				<ul class="pagination">
-					<li class="disabled"><a href="">&laquo;</a></li>
-					<li class="active"><a href="">1</a></li>
-					<li><a href="">2</a></li>
-					<li><a href="">3</a></li>
-					<li><a href="">4</a></li>
-					<li><a href="">5</a></li>
-					<li><a href="">6</a></li>
-					<li><a href="">&raquo;</a></li>
-				</ul>
-			</center>
+			<%--<center class="">--%>
+				<%--<ul class="pagination">--%>
+					<%--<li class="disabled"><a href="">&laquo;</a></li>--%>
+					<%--<li class="active"><a href="">1</a></li>--%>
+					<%--<li><a href="">2</a></li>--%>
+					<%--<li><a href="">3</a></li>--%>
+					<%--<li><a href="">4</a></li>--%>
+					<%--<li><a href="">5</a></li>--%>
+					<%--<li><a href="">6</a></li>--%>
+					<%--<li><a href="">&raquo;</a></li>--%>
+				<%--</ul>--%>
+			<%--</center>--%>
 
 		</div>
 	</div>	<!-- /container -->

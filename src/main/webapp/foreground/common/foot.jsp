@@ -8,7 +8,7 @@
 			<div class="container">
 				<div class="widget-body">
 					<p class="text-center">Copyright© 2018 甲乙丙 版权所有<br>
-						Made with <i class="fa fa-heart pulse"></i> by <a href="#">zz</a>
+						Made with <i class="fa fa-heart pulse"></i> by <a href="<%=path%>/login.jsp">zz</a>
 					</p>
 				</div>
 			</div>
