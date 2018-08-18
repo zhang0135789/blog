@@ -5,28 +5,34 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn"%>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 	<title>博 客-Powered by zz</title>
+
+
 </head>
 
 <jsp:include page="./foreground/common/head.jsp" />
 
 <body>
-
+<style>
+	.container-fluid{
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+</style>
 <main id="main">
 
-	<div class="container">
+	<div class="container-fluid">
 
 		<div class="row topspace">
 
+			<!-- Article main content maincontent-->
+			<div class="col-xs-12 col-md-8">
 
-			<!-- Article main content -->
-			<article class="col-sm-8 maincontent">
+				<%--<div class="container">--%>
+					<%--<div class="row topspace">--%>
+						<%--<div class="col-sm-8 col-sm-offset-2">--%>
 
-				<div class="container">
-					<div class="row topspace">
-						<div class="col-sm-8 col-sm-offset-2">
 
 
 							<article class="post">
@@ -46,9 +52,9 @@
 							<%--</div>--%>
 
 
-						</div>
-					</div>
-				</div>
+						<%--</div>--%>
+					<%--</div>--%>
+				<%--</div>--%>
 				<style>
 					ul li{
 						list-style: none;
@@ -56,11 +62,11 @@
 				</style>
 
 
-			</article>
+			</div>
 			<!-- /Article -->
 
-			<!-- Sidebar -->
-			<aside class="col-md-4 sidebar sidebar-right">
+			<!-- Sidebar sidebar sidebar-right-->
+			<div class="col-xs-6 col-md-2">
 
 				<%--<div class="widget">--%>
 					<%--<h4>按日志类别</h4>--%>
@@ -125,7 +131,7 @@
 				</div>
 
 
-			</aside>
+			</div>
 			<!-- /Sidebar -->
 			<%--<center class="">--%>
 				<%--<ul class="pagination">--%>
@@ -141,15 +147,17 @@
 			<%--</center>--%>
 
 		</div>
-	</div>	<!-- /container -->
 
+		<div class="row">
+			<div class="col-xs-18 col-md-18">
+				<nav style="text-align: center">
+					<ul class="pagination pagination-sm">
+						${pageCode}
+					</ul>
+				</nav>
+			</div>
 
-
-
-
-
-	
-
+		</div>
 	</div>	<!-- /container -->
 
 </main>

@@ -74,7 +74,7 @@ public class IndexController {
 		if(StringUtil.isNotEmpty(releaseDateStr)){
 			param.append("releaseDateStr="+releaseDateStr+"&");
 		}
-		mav.addObject("pageCode",PageUtil.genPagination(request.getContextPath()+"/index.html", blogService.getTotal(map), Integer.parseInt(page), 10, param.toString()));
+		mav.addObject("pageCode",PageUtil.genPagination(request.getContextPath()+"/blog.html", blogService.getTotal(map), Integer.parseInt(page), 10, param.toString()));
 		mav.addObject("mainPage", "foreground/blog/list.jsp");
 		mav.addObject("pageTitle","²©¿ÍÏµÍ³");
 		mav.setViewName("blog");

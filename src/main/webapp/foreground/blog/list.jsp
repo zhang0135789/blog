@@ -13,22 +13,41 @@
 <link rel="stylesheet" href="${pageContext.request.contextPath}/static/assets/css/styles.css">
 
 <!--[if lt IE 9]> <script src="${pageContext.request.contextPath}/static/assets/js/html5shiv.js"></script> <![endif]-->
+<style>
+	.entry-content{
+		margin-left: 66px;
+		margin-right: 66px;
+	}
+</style>
+
 
 <c:forEach var="blog" items="${blogList}">
 <article class="post">
 	<header class="entry-header">
 		<div class="entry-meta">
-			<span class="posted-on"><a href="${pageContext.request.contextPath}/blog/articles/${blog.id}.html"><time class="entry-date published" date="2013-09-27"><fmt:formatDate value="${blog.releaseDate}" type="date" pattern="yyyy年MM月dd日"/></time></a></span>
+			<span class="posted-on"><time class="entry-date published" date="2013-09-27"><fmt:formatDate value="${blog.releaseDate}" type="date" pattern="yyyy年MM月dd日"/></time></span>
 		</div>
 		<h1 class="entry-title"><a href="${pageContext.request.contextPath}/blog/articles/${blog.id}.html" rel="bookmark">${blog.title}</a></h1>
 	</header>
 	<div class="entry-content">
-		<p>摘要: ${blog.summary }...</p>
-		<span class="info">发表于 <fmt:formatDate value="${blog.releaseDate }" type="date" pattern="yyyy-MM-dd HH:mm"/> 阅读(${blog.clickHit}) 评论(${blog.replyHit}) </span>
+		<p style="text-indent:2em; padding:0px; margin:0px;">摘要: ${blog.summary }...</p>
+	</div>
+	<div class="entry-content">
+		<span class="img">
+			<c:forEach var="image" items="${blog.imagesList }">
+				<a href="${pageContext.request.contextPath}/blog/articles/${blog.id}.html">${image}</a>
+				&nbsp;&nbsp;
+			</c:forEach>
+		</span>
+	</div>
+	<div class="entry-content">
+		<span style="text-align: right;display:block;" class="info">发表于 <fmt:formatDate value="${blog.releaseDate }" type="date" pattern="yyyy-MM-dd HH:mm"/> 阅读(${blog.clickHit}) 评论(${blog.replyHit}) </span>
 	</div>
 </article>
 </c:forEach>
-
+<script >
+	document.getElementsByClassName("img").getELementsByTagName("img").addClass(img-responsive).alt("Responsive image");
+</script >
 
 <%--<div class="data_list">--%>
 		<%--<div class="data_list_title">--%>
@@ -55,10 +74,10 @@
 		<%--</div>--%>
    <%--</div>--%>
 
-<%--<div>--%>
-	<nav>
-	  <ul class="pagination pagination-sm">
-	    ${pageCode}
-	  </ul>
-	</nav>
- <%--</div>--%>
+<%--&lt;%&ndash;<div>&ndash;%&gt;--%>
+	<%--<nav>--%>
+	  <%--<ul class="pagination pagination-sm">--%>
+	    <%--${pageCode}--%>
+	  <%--</ul>--%>
+	<%--</nav>--%>
+ <%--&lt;%&ndash;</div>&ndash;%&gt;--%>
