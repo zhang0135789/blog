@@ -51,7 +51,7 @@
 					<li class="dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown">More Pages<b class="caret"></b></a>
 						<ul class="dropdown-menu">
-							<li><a href="http://zhang123.vip">个人主页</a></li>
+							<li><a href="https://zhang123.vip">个人主页</a></li>
 							<li><a href="#">1020论坛</a></li>
 							<li><a href="#">MORE</a></li>
 							<%--<li><a href="<%=path%>/login.jsp">LOGIN</a></li>--%>
