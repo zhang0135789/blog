@@ -16,7 +16,7 @@ import vip.zhang123.util.CryptographyUtil;
 
 /**
  * ²©Ö÷Controller²ã
- * @author java1234_Ð¡·æ
+ * @author zz
  *
  */
 @Controller

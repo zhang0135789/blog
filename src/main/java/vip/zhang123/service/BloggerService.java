@@ -4,7 +4,7 @@ import vip.zhang123.entity.Blogger;
 
 /**
  * 博主Service接口
- * @author java1234_小锋
+ * @author zz
  *
  */
 public interface BloggerService {

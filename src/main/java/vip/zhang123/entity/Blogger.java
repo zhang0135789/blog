@@ -2,7 +2,7 @@ package vip.zhang123.entity;
 
 /**
  * 博主实体
- * @author java1234_小锋
+ * @author zz
  *
  */
 public class Blogger {

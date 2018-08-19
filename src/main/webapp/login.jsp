@@ -182,7 +182,7 @@ function checkForm(){
 	  	</P>
 		<DIV style="height: 50px; line-height: 50px; margin-top: 30px; border-top-color: rgb(231, 231, 231); border-top-width: 1px; border-top-style: solid;">
 			<P style="margin: 0px 35px 20px 45px;">
-			<SPAN style="float: left;">Java开源博客系统</SPAN> 
+			<SPAN style="float: left;">博客系统</SPAN>
 			<span><font color="red" id="error">${errorInfo }</font></span>
 	        <SPAN style="float: right;"> 
 	              <input type="submit" style="background: rgb(0, 142, 173); padding: 7px 10px; border-radius: 4px; border: 1px solid rgb(26, 117, 152); border-image: none; color: rgb(255, 255, 255); font-weight: bold;" value="登录"/> 

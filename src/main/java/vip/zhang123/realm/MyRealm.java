@@ -16,7 +16,7 @@ import vip.zhang123.service.BloggerService;
 
 /**
  * 自定义Realm
- * @author java1234_小锋
+ * @author zz
  *
  */
 public class MyRealm extends AuthorizingRealm{

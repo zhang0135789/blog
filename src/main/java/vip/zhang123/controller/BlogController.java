@@ -56,7 +56,7 @@ public class BlogController {
 			mav.addObject("keyWords",null);			
 		}
 		mav.addObject("blog", blog);
-		blog.setClickHit(blog.getClickHit()+1); // 博客点击次数加1
+		blog.setClickHit(blog.getClickHit()+1); // 博客点击次数加1view
 		blogService.update(blog);
 		Map<String,Object> map=new HashMap<String,Object>();
 		map.put("blogId", blog.getId());
