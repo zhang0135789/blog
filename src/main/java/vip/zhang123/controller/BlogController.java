@@ -8,6 +8,10 @@ import java.util.Map;
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
+import org.jsoup.select.Elements;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -56,6 +60,23 @@ public class BlogController {
 			mav.addObject("keyWords",null);			
 		}
 		mav.addObject("blog", blog);
+		//处理图片
+        List<String> imagesList = blog.getImagesList();
+        String blogInfo = blog.getContent();
+        Document doc = Jsoup.parse(blogInfo);
+        Elements jpgs = doc.select("img[src$=.jpg]"); //　查找扩展名是jpg的图片
+        for(int i=0;i<jpgs.size();i++){
+            Element jpg = jpgs.get(i);
+            String src = jpg.attr("src");
+            jpg.attr("src","${pageContext.request.contextPath}"+src);
+            String jpggg = jpg.toString();
+            imagesList.add(jpg.toString());
+            if(i==2){
+                break;
+            }
+        }
+
+
 		blog.setClickHit(blog.getClickHit()+1); // 博客点击次数加1view
 		blogService.update(blog);
 		Map<String,Object> map=new HashMap<String,Object>();

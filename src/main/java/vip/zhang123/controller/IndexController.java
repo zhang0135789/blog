@@ -60,6 +60,9 @@ public class IndexController {
 			Elements jpgs = doc.select("img[src$=.jpg]"); //　查找扩展名是jpg的图片
 			for(int i=0;i<jpgs.size();i++){
 				Element jpg = jpgs.get(i);
+				String src = jpg.attr("src");
+				jpg.attr("src","${pageContext.request.contextPath}"+src);
+				String jpggg = jpg.toString();
 				imagesList.add(jpg.toString());
 				if(i==2){
 					break;
