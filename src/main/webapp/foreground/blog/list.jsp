@@ -18,6 +18,12 @@
 		margin-left: 66px;
 		margin-right: 66px;
 	}
+	.img img {
+		width: 206px;
+		height: 91px;
+		max-width:100%;
+		max-height:100%;
+	}
 </style>
 
 
@@ -27,26 +33,24 @@
 		<div class="entry-meta">
 			<span class="posted-on"><time class="entry-date published" date="2013-09-27"><fmt:formatDate value="${blog.releaseDate}" type="date" pattern="yyyy年MM月dd日"/></time></span>
 		</div>
-		<h1 class="entry-title"><a href="${pageContext.request.contextPath}/blog/articles/${blog.id}.html" rel="bookmark">${blog.title}</a></h1>
+		<h1 class="entry-title"><a href="${pageContext.request.contextPath}/blog/articles/${blog.id}.html" rel="bookmark" style="font-size: 1.66rem;">${blog.title}</a></h1>
 	</header>
 	<div class="entry-content">
 		<p style="text-indent:2em; padding:0px; margin:0px;">摘要: ${blog.summary }...</p>
 	</div>
-	<div class="entry-content">
-		<span class="img">
-			<c:forEach var="image" items="${blog.imagesList }">
-				<a href="${pageContext.request.contextPath}/blog/articles/${blog.id}.html">${image}</a>
-				&nbsp;&nbsp;
-			</c:forEach>
-		</span>
+	<div class="entry-content img">
+		<c:forEach var="image" items="${blog.imagesList }">
+			<a href="${pageContext.request.contextPath}/blog/articles/${blog.id}.html">${image}</a>
+			&nbsp;&nbsp;
+		</c:forEach>
 	</div>
 	<div class="entry-content">
-		<span style="text-align: right;display:block;" class="info">发表于 <fmt:formatDate value="${blog.releaseDate }" type="date" pattern="yyyy-MM-dd HH:mm"/> 阅读(${blog.clickHit}) 评论(${blog.replyHit}) </span>
+		<span style="text-align: right;display:block;font-size: 12px;" class="info">发表于 <fmt:formatDate value="${blog.releaseDate }" type="date" pattern="yyyy-MM-dd HH:mm"/> 阅读(${blog.clickHit}) 评论(${blog.replyHit}) </span>
 	</div>
 </article>
 </c:forEach>
 <script >
-	document.getElementsByClassName("img").getELementsByTagName("img").addClass(img-responsive).alt("Responsive image");
+	document.getElementsByClassName("img").getELementsByTagName("img").addClass("img-responsive").addClass("img-thumbnail");
 </script >
 
 <%--<div class="data_list">--%>

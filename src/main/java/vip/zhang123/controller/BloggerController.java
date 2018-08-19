@@ -34,7 +34,7 @@ public class BloggerController {
 	@RequestMapping("/blogger/login")
 	public String login(Blogger blogger, HttpServletRequest request){
 		Subject subject=SecurityUtils.getSubject();
-		UsernamePasswordToken token=new UsernamePasswordToken(blogger.getUserName(), CryptographyUtil.md5(blogger.getPassword(), "zhang123"));
+		UsernamePasswordToken token=new UsernamePasswordToken(blogger.getUserName(), CryptographyUtil.md5(blogger.getPassword(), blogger.getUserName()));
 		try{
 			subject.login(token); // µÇÂ¼ÑéÖ¤
 			return "redirect:/admin/main.jsp";

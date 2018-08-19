@@ -42,24 +42,24 @@ public class IndexController {
 	 */
 	@RequestMapping("/blog")
 	public ModelAndView index(@RequestParam(value="page",required=false)String page,@RequestParam(value="typeId",required=false)String typeId,@RequestParam(value="releaseDateStr",required=false)String releaseDateStr,HttpServletRequest request)throws Exception{
-		ModelAndView mav=new ModelAndView();
+		ModelAndView mav = new ModelAndView();
 		if(StringUtil.isEmpty(page)){
 			page="1";
 		}
-		PageBean pageBean=new PageBean(Integer.parseInt(page),10);
+		PageBean pageBean = new PageBean(Integer.parseInt(page),10);
 		Map<String,Object> map=new HashMap<String,Object>();
 		map.put("start", pageBean.getStart());
 		map.put("size", pageBean.getPageSize());
 		map.put("typeId", typeId);
 		map.put("releaseDateStr", releaseDateStr);
-		List<Blog> blogList=blogService.list(map);
+		List<Blog> blogList = blogService.list(map);
 		for(Blog blog:blogList){
-			List<String> imagesList=blog.getImagesList();
-			String blogInfo=blog.getContent();
-			Document doc=Jsoup.parse(blogInfo);
-			Elements jpgs=doc.select("img[src$=.jpg]"); //　查找扩展名是jpg的图片
+			List<String> imagesList = blog.getImagesList();
+			String blogInfo = blog.getContent();
+			Document doc = Jsoup.parse(blogInfo);
+			Elements jpgs = doc.select("img[src$=.jpg]"); //　查找扩展名是jpg的图片
 			for(int i=0;i<jpgs.size();i++){
-				Element jpg=jpgs.get(i);
+				Element jpg = jpgs.get(i);
 				imagesList.add(jpg.toString());
 				if(i==2){
 					break;
