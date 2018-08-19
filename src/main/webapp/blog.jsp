@@ -22,7 +22,7 @@
 </style>
 <main id="main">
 
-	<div class="container-fluid">
+	<div class="container-fluid" style="margin-left:90px">
 
 		<div class="row topspace">
 
@@ -59,7 +59,7 @@
 			<!-- /Article -->
 
 			<!-- Sidebar sidebar sidebar-right-->
-			<div class="col-xs-6 col-md-2">
+			<div class="col-xs-6 col-md-2" style="margin-left:60px">
 
 				<%--<div class="widget">--%>
 					<%--<h4>按日志类别</h4>--%>

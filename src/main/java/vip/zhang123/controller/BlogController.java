@@ -21,7 +21,7 @@ import vip.zhang123.service.CommentService;
 import vip.zhang123.util.StringUtil;
 
 /**
- * 博客Controller层
+ * Blog Controller
  * @author Administrator
  *
  */
@@ -65,7 +65,7 @@ public class BlogController {
 		mav.addObject("pageCode", this.genUpAndDownPageCode(blogService.getLastBlog(id),blogService.getNextBlog(id),request.getServletContext().getContextPath()));
 		mav.addObject("mainPage", "foreground/blog/view.jsp");
 		mav.addObject("pageTitle",blog.getTitle()+"_Java博客系统");
-		mav.setViewName("mainTemp");
+		mav.setViewName("blog");
 		return mav;
 	}
 	
