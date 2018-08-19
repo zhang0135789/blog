@@ -61,7 +61,7 @@ public class IndexController {
 			for(int i=0;i<jpgs.size();i++){
 				Element jpg = jpgs.get(i);
 				String src = jpg.attr("src");
-				jpg.attr("src","${pageContext.request.contextPath}"+src);
+				jpg.attr("src",src);
 				String jpggg = jpg.toString();
 				imagesList.add(jpg.toString());
 				if(i==2){
@@ -70,7 +70,7 @@ public class IndexController {
 			}
 		}
 		mav.addObject("blogList", blogList);
-		StringBuffer param=new StringBuffer(); // 查询参数
+			StringBuffer param=new StringBuffer(); // 查询参数
 		if(StringUtil.isNotEmpty(typeId)){
 			param.append("typeId="+typeId+"&");
 		}
