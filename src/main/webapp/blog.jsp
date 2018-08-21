@@ -76,7 +76,7 @@
 					<%--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, ratione delectus reiciendis nulla nisi pariatur molestias animi eos repellat? Vel.</p>--%>
 				<%--</div>--%>
 
-				<div class="widget">
+				<div class="widget data_list">
 					<div class="data_list_title">
 						<h4><img src="${pageContext.request.contextPath}/static/images/byType_icon.png"/>
 						按日志类别
@@ -91,7 +91,7 @@
 					</div>
 				</div>
 
-				<div class="widget">
+				<div class="widget data_list">
 					<div class="data_list_title">
 						<h4>
 						<img src="${pageContext.request.contextPath}/static/images/byDate_icon.png"/>
@@ -107,7 +107,7 @@
 					</div>
 				</div>
 
-				<div class="widget">
+				<div class="widget data_list">
 					<div class="data_list_title">
 						<h4>
 						<img src="${pageContext.request.contextPath}/static/images/link_icon.png"/>
@@ -160,3 +160,30 @@
 
 </body>
 </html>
+
+<%--<style>--%>
+    <%--.data_list {--%>
+        <%--border: 1px solid #E5E5E5;--%>
+        <%--padding: 10px;--%>
+        <%--background-color: #FDFDFD;--%>
+        <%--margin-top: 0px;--%>
+        <%--margin-bottom: 10px;--%>
+    <%--}--%>
+
+    <%--.data_list .data_list_title {--%>
+        <%--font-size: 15px;--%>
+        <%--font-weight: bold;--%>
+        <%--border-bottom: 1px solid #E5E5E5;--%>
+        <%--padding-bottom: 10px;--%>
+        <%--padding-top: 5px;--%>
+    <%--}--%>
+
+    <%--.data_list .datas {--%>
+        <%--padding: 5px;--%>
+    <%--}--%>
+
+    <%--.datas ul li {--%>
+        <%--color: #337ab7;--%>
+    <%--}--%>
+
+<%--</style>--%>

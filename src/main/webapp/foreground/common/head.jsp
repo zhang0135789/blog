@@ -18,6 +18,7 @@
 	<link rel="stylesheet" href="<%=path%>/static/assets/css/css.css">
 	<!-- Custom styles -->
 	<link rel="stylesheet" href="<%=path%>/static/assets/css/styles.css">
+	<link rel="stylesheet" href="<%=path%>/static/css/blog.css">
 
 	<!--[if lt IE 9]> <script src="<%=path%>/static/assets/js/html5shiv.js"></script> <![endif]-->
 

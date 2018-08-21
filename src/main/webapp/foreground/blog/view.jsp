@@ -57,34 +57,45 @@
 
 	<div class="data_list">
 		<div>
-			<div class="blog_title"><h3><strong>${blog.title }</strong></h3></div>
-			<div style="padding-left: 330px;padding-bottom: 20px;padding-top: 10px">
-				<div class="bshare-custom"><a title="分享到QQ空间" class="bshare-qzone"></a><a title="分享到新浪微博" class="bshare-sinaminiblog"></a><a title="分享到人人网" class="bshare-renren"></a><a title="分享到腾讯微博" class="bshare-qqmb"></a><a title="分享到网易微博" class="bshare-neteasemb"></a><a title="更多平台" class="bshare-more bshare-more-icon more-style-addthis"></a><span class="BSHARE_COUNT bshare-share-count">0</span></div><script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/buttonLite.js#style=-1&amp;uuid=&amp;pophcol=1&amp;lang=zh"></script><script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/bshareC0.js"></script>
+			<header class="entry-header">
+				<div class="blog_title"><h3 style="text-align:center"><strong>${blog.title }</strong></h3></div>
+				<div style="padding-left: 330px;padding-bottom: 20px;padding-top: 10px">
+					<div class="bshare-custom"><a title="分享到QQ空间" class="bshare-qzone"></a><a title="分享到新浪微博" class="bshare-sinaminiblog"></a><a title="分享到人人网" class="bshare-renren"></a><a title="分享到腾讯微博" class="bshare-qqmb"></a><a title="分享到网易微博" class="bshare-neteasemb"></a><a title="更多平台" class="bshare-more bshare-more-icon more-style-addthis"></a><span class="BSHARE_COUNT bshare-share-count">0</span></div><script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/buttonLite.js#style=-1&amp;uuid=&amp;pophcol=1&amp;lang=zh"></script><script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/bshareC0.js"></script>
+				</div>
+
+				<div class="entry-meta">
+					<span class="posted-on" style="font-size: 0.86rem;">发布时间：『 <fmt:formatDate value="${blog.releaseDate }" type="date" pattern="yyyy-MM-dd HH:mm"/>』&nbsp;&nbsp;博客类别：${blog.blogType.typeName}&nbsp;&nbsp;阅读(${blog.clickHit}) 评论(${blog.replyHit})</span>
+				</div>
+
+			</header>
+
+			<hr style="height:5px;border:none;border-top:1px dashed gray;padding-bottom:  10px;">
+
+			<div class="entry-content">
+				<div class="blog_content">
+					${blog.content }
+				</div>
+				<div class="blog_keyWord">
+					<font><strong>关键字：</strong></font>
+					<c:choose>
+						<c:when test="${keyWords==null}">
+							&nbsp;&nbsp;无
+						</c:when>
+						<c:otherwise>
+							<c:forEach var="keyWord" items="${keyWords }">
+								&nbsp;&nbsp;<a href="${pageContext.request.contextPath}/blog/q.html?q=${keyWord}" target="_blank">${keyWord }</a>&nbsp;&nbsp;
+							</c:forEach>
+						</c:otherwise>
+					</c:choose>
+				</div>
+				<%--<div class="blog_lastAndNextPage">--%>
+				<%--${pageCode}--%>
+				<%--</div>--%>
 			</div>
-			<div class="blog_info">
-				发布时间：『 <fmt:formatDate value="${blog.releaseDate }" type="date" pattern="yyyy-MM-dd HH:mm"/>』&nbsp;&nbsp;博客类别：${blog.blogType.typeName}&nbsp;&nbsp;阅读(${blog.clickHit}) 评论(${blog.replyHit})
-			</div>
-			<div class="blog_content">
-				${blog.content }
-			</div>
-			<div class="blog_keyWord">
-				<font><strong>关键字：</strong></font>
-				<c:choose>
-					<c:when test="${keyWords==null}">
-						&nbsp;&nbsp;无
-					</c:when>
-					<c:otherwise>
-						<c:forEach var="keyWord" items="${keyWords }">
-							&nbsp;&nbsp;<a href="${pageContext.request.contextPath}/blog/q.html?q=${keyWord}" target="_blank">${keyWord }</a>&nbsp;&nbsp;
-						</c:forEach>
-					</c:otherwise>
-				</c:choose>
-			</div>
-			<div class="blog_lastAndNextPage">
-				${pageCode }
-			</div>
-		</div>
+
 	</div>
+
+		<%--评论部分--%>
 	<div class="data_list">
 		<div class="data_list_title">
 			<img src="${pageContext.request.contextPath}/static/images/comment_icon.png"/>
@@ -140,3 +151,19 @@
 	</div>
 
 </article>
+
+
+<%--<style>--%>
+	<%--.data_list .commentDatas {--%>
+		<%--padding: 10px;--%>
+	<%--}--%>
+	<%--.data_list .commentDatas .comment {--%>
+		<%--margin-top: 10px;--%>
+		<%--margin-bottom: 5px;--%>
+		<%--padding-bottom: 15px;--%>
+		<%--border-bottom: 1px dotted gray;--%>
+	<%--}--%>
+	<%--.data_list .commentDatas .comment font {--%>
+		<%--font-weight: bold;--%>
+	<%--}--%>
+<%--</style>--%>
