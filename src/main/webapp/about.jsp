@@ -19,7 +19,7 @@
 
 				<article class="post">
 					<header class="entry-header">
-						<h1 class="entry-title"><a href="single.html" rel="bookmark">${blogger.nickName} の BLOG</a></h1>
+						<h1 class="entry-title"><a href="blog.html" rel="bookmark">${blogger.nickName} の BLOG</a></h1>
 						<div class="entry-meta">
 							<span class="posted-on">${blogger.sign}</span>
 						</div>
