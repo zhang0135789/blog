@@ -50,7 +50,9 @@
 </article>
 </c:forEach>
 <script >
-	document.getElementsByClassName("img").getELementsByTagName("img").addClass("img-responsive").addClass("img-thumbnail");
+	<c:if test="${image!=null}">
+		document.getElementsByClassName("img").getELementsByTagName("img").addClass("img-responsive").addClass("img-thumbnail");
+    </c:if>
 </script >
 
 <%--<div class="data_list">--%>
